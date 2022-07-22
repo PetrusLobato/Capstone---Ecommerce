@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,900;1,100;1,300;1,700&display=swap');
+
+*{
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+    list-style: none;
+}
+
+main{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 120px;
+    left: -3px;
+    top: 0;
+    position: absolute;
+}
+
+header img{
+    width: 180px;
+    height: 24px;
+}
+
+nav.navheader{
+    display: flex;  
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+p.geral{
+    font-weight: bolder;
+}
+
+p.geral:hover{
+    color: #37268C;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+p.cadeira, .monitor, .mouse{
+    width: 60px;
+}
+
+p.cadeira:hover, .monitor:hover, .mouse:hover {
+    color: #37268C;
+    cursor: pointer;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+section.corpo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    margin-top: 100px;
+}
+
+article.ladoEsquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav label{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    background: #dddada;
+    width: 257px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 14px;
+}
+
+button.btt{
+    background: #2E245E;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    cursor: pointer;
+}
+
+
+div.carro{
+    background: #37268C;
+    width: 347px;
+    height: 38px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 38px;
+    
+}
+
+ul.itensCarro{
+    background: rgb(255 255 255);
+    height: 300px;
+    border-radius: 5px;
+    overflow-y: auto;
+    margin: 0;
+    border: solid 2px #2E245E;
+    color: #000000;
+}
+
+div.total{
+    background:#37268C;
+    color: white;
+    height: 80px;
+    border-radius: 5px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 10px;
+}
+
+div.result{
+    display: flex;
+    justify-content: space-between;
+}
+
+article.cardsTotal{
+    width: 72%;  
+}
+
+ul.cards{
+    margin: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+li.carItens{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    border: solid 2px #F5F5F5;
+    align-items: center;
+    justify-content: space-between;
+    width: 27%;
+    margin: 0 0 24px 0;
+    border-radius: 5px;     
+}
+
+li.carItens:hover{
+    border: solid 2px blue;
+    cursor: pointer;
+    
+
+}
+
+li.carItens figure{
+ border-bottom: 2px solid #F5F5F5;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+}
+
+li.carItens img{
+    width: 150px;
+    height: 147px;   
+    
+}
+
+li.carItens img:hover{
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+div.especificacao{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 8px;
+    width: 100%;
+    height: 69%;
+   
+}
+
+p.categoria{
+    background: #2E245E;
+    color: white;  
+    border-radius: 3px;
+    width: 80px;
+    height: 19px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: #292929
+}
+
+p.descricao{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    color: #242424;
+}
+
+p.precoItem{
+    font-weight: 600;
+    font-size: 14px;
+    color: #2E245E;
+}
+
+button.adicionar{
+    background: #37268C;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+    height: 16px;
+}
+
+button.adicionar:hover{
+    color: black;
+    background-color: rgb(203, 52, 52);    
+}
+
+li.liCarro{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;    
+}
+
+.itensVazio{
+    display: flex;
+    flex-direction: column;   
+}
+
+.vazio{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    margin: 100px 0 0 0;   
+}
+
+.addItens{
+    text-align: center;
+    margin: 9px 0 0 0;    
+}
+
+img.imgCarro{
+    width: 88px;
+    height: 92px;    
+}
+
+
+
+h2.hCarro{
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+p.pCarro{
+    font-weight: 600;
+    font-size: 14px;
+    color: #2E245E;
+}
+
+button.bttCarro{
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgb(203, 52, 52);
+    width: 120px;
+    border-radius: 5px;
+}
+
+button.bttCarro:hover{
+    cursor: pointer;
+    background: rgb(55, 38, 140);
+    color: white;
+    border: none;
+}
+
+.finalizarCompra{
+    border-radius: 5px;
+    background-color: rgb(55, 38, 140);
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+    cursor: pointer;   
+}
+
+.modoDark{
+    background-color: #000000;
+    width: 22px;
+    height: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+}
+
+.bttDark{
+    width: 80px;
+    height: 29px;
+    border-radius: 10px;
+    border: 3px solid  rgb(55, 38, 140);
+    margin-top: 5px;
+    display: flex;
+    padding: 1px 2px;  
+}
+
+.solua{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+.lua, .sol{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;  
+}
+
+.dark{
+    background: #2b2b2b;
+    
+}
+.darkp{
+    font-size: 14px;
+    color: white;
+}
+
+.darkh2{
+    color: white;
+}
+
+
+.ativado{
+    display: flex;
+    justify-content: end;
+    transform: translateX(45px);
+    transition: 1s;
+}
+
+
+
+.lixeira{
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 130px;
+    top: 207px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+strong, nav p{
+    color: #000000;
+}
