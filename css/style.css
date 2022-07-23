@@ -387,3 +387,77 @@ button.bttCarro:hover{
 strong, nav p{
     color: #000000;
 }
+
+@media only screen and (max-width: 769px){
+
+    main{
+        height: 100%;
+    }
+
+    .corpo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 2800px;
+        padding: 0 60px;
+    }
+
+    header{
+        width: 711px;
+    
+    }
+
+    li.carItens{
+        height: 730px;
+        width: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+
+    .cardsTotaal{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .lixeira{
+        opacity: 0;
+    }
+
+    .navheader{
+        font-size: 10px;
+    }
+
+    .geral, .cadeira, .monitor, .mouse{
+        margin: 0 3px;
+    }
+
+    ul.cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 2200px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width:769px){
+    .navheader{
+        font-size: 10px;
+    }
+
+    li.carItens{
+        height: 730px;
+        width: 135px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

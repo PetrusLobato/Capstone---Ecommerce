@@ -365,14 +365,7 @@ somaCarrinho(carrinho)
         }else{
             textpreco.classList.add('darkp');
             textpreco.classList.remove('precoItem');
-        }}
-              
-
-
-
-        
-        
-        
+        }}  
 
     })
 
